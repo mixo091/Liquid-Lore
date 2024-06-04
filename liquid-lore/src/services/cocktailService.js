@@ -16,6 +16,7 @@ export const fetchAllCocktails = async () => {
                 allCocktails = [...allCocktails, ...response.data.drinks];
             }
         });
+        console.log('All' , allCocktails);
         return allCocktails;
     } catch (error) {
         console.error('Error Fetching all Cocktails:', error);
